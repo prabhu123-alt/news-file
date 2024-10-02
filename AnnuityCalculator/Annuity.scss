@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Gotham Pro";
+    src: url('./font&image/GothamPro-regular.woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham Pro";
+    src: url('./font&image/GothamPro-regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham Pro";
+    src: url('./assests/fonts/GothamPro-Medium.woff2\ 2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham Pro";
+    src: url('./font&image/GothamPro-regular.woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham Pro";
+    src: url('./font&image/GothamPro-regular.woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin price1 {
+
+    max-width: 167px;
+    width: 100%;
+    border-right: 1px solid #221F20;
+    padding: 8px 16px;
+
+    p {
+        font-family: Gotham Pro;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13.92px;
+        color: #221F20;
+    }
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    .Annuity {
+        background: #FFFFFF;
+        border: 1px solid #C8C6C7;
+        border-radius: 16px;
+
+        .heading {
+            padding: 24px;
+            border-bottom: 1px solid #C8C6C7;
+
+            h1 {
+                font-family: Gotham Pro;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 34.56px;
+                color: #221F20;
+
+            }
+        }
+
+        .main {
+            display: flex;
+
+            .left_side {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border-right: 1px solid #C8C6C7;
+
+                .topside {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    padding: 24px;
+
+                    .forms {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        input {
+                            outline: none !important;
+                            border: none;
+                            font-family: Gotham Pro;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 16.24px;
+                            color: #221F20;
+                            width: 100%;
+                        }
+
+                        .inp {
+                            #image-hide {
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+                                border: 1px solid #DEDCDD;
+                                padding: 10px 12px;
+                                border-radius: 8px;
+                                font-family: Gotham Pro;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 19.6px;
+
+
+                                .image-hids {
+                                    width: 20px;
+                                    height: 20px;
+                                    display: none;
+                                    cursor: pointer;
+
+                                }
+
+
+                            }
+
+                            #image-hide2 {
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+                                border: 1px solid #DEDCDD;
+                                padding: 10px 12px;
+                                border-radius: 8px;
+                                font-family: Gotham Pro;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 19.6px;
+
+
+                                .image-hids {
+                                    width: 20px;
+                                    height: 20px;
+                                    display: none;
+                                    cursor: pointer;
+
+                                }
+
+
+                            }
+
+                            #agepra {
+                                font-family: Gotham Pro;
+                                font-weight: 400;
+                                font-size: 10px;
+                                line-height: 19.6px;
+                            }
+
+                            #Amountpra {
+                                font-family: Gotham Pro;
+                                font-weight: 400;
+                                font-size: 10px;
+                                line-height: 19.6px;
+                            }
+                        }
+
+                    }
+
+                    .lables {
+                        label {
+                            font-family: Gotham Pro;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 19.6px;
+
+                        }
+
+                    }
+
+
+                    .ranges {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .range1 {
+
+                            .accent {
+                                background-color: rgba(25, 65, 122, 1);
+                                height: 10px;
+                            }
+
+                            .accent::before {
+                                background-color: rgb(176, 183, 192);
+                            }
+
+                            input {
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                appearance: none;
+                                width: 100%;
+                                border-radius: 8px;
+                                height: 10px;
+                                /* Adjust height for the track */
+                                background-color: #e0e0e0;
+                                /* Track color */
+                            }
+
+                            input[type=range]::-webkit-slider-thumb {
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 100%;
+                                background-color: #ffffff;
+                                border: 4px solid rgba(25, 65, 122, 1);
+                                cursor: pointer;
+                            }
+
+                            input[type=range]::-moz-range-thumb {
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 100%;
+                                background-color: #ffffff;
+                                border: 4px solid rgba(25, 65, 122, 1);
+                                cursor: pointer;
+                            }
+
+
+                        }
+
+
+                        .return {
+                            display: flex;
+                            gap: 56px;
+
+
+                            p {
+
+                                width: 197px;
+                                font-family: Gotham Pro;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 19.6px;
+
+                            }
+
+                            input {
+                                border: 1px solid #DEDCDD;
+                                padding: 10px 12px;
+                                border-radius: 8px;
+                                width: 100px;
+                                font-family: Gotham Pro;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 19.6px;
+                            }
+                        }
+
+                        .pra {
+                            display: flex;
+                            justify-content: space-between;
+
+                            p {
+                                font-family: Gotham Pro;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 19.6px;
+                            }
+
+                        }
+                    }
+                }
+
+                .bottom {
+                    padding: 24px;
+                    border-top: 1px solid #C8C6C7;
+
+                    button {
+                        background: #19417A;
+                        color: #FFFFFF;
+                        font-size: 16px;
+                        font-family: Gotham Pro;
+                        font-weight: 400;
+                        line-height: 18.56px;
+                        width: 100%;
+                        padding: 12px 24px;
+                        border-radius: 100px;
+                        border-style: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .hideimage {
+
+                .raju {
+                    width: 100%;
+                    max-width: 1000px;
+                    margin-top: 20px;
+                    /* height: 100%; */
+                    min-height: 651px;
+                }
+
+                #righttwo {
+                    display: none;
+
+
+                    .right {
+                        display: none;
+                        width: 100%;
+                        background: #F1F3FC;
+                        padding: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 40px;
+                        border-bottom-right-radius: 16px;
+
+                        .heading2 {
+                            h1 {
+                                font-family: Gotham Pro;
+                                font-weight: 400;
+                                font-size: 28px;
+                                line-height: 30.24px;
+                                color: #221F20;
+                            }
+                        }
+
+                        .price {
+                            padding: 24px;
+                            background: #FFFFFF;
+                            border-radius: 8px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 16px;
+
+                            .Yearly-without-return {
+                                display: flex;
+                                align-items: center;
+
+                                .price1 {
+                                    @include price1;
+                                    font-family: Gotham Pro;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 19.6px;
+                                }
+
+                                span {
+                                    padding: 12px 24px;
+                                    font-family: Gotham Pro;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    line-height: 16.24px;
+                                    color: #221F20;
+                                    background: #5571AF;
+                                    color: white;
+                                    border-top-right-radius: 8px;
+                                    border-bottom-right-radius: 8px;
+                                    padding-left: 60px;
+                                    display: none;
+
+
+                                }
+                            }
+
+                            .Yearly-with-return {
+                                display: flex;
+                                align-items: center;
+
+                                .price2 {
+                                    @include price1;
+                                    font-family: Gotham Pro;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 19.6px;
+                                }
+
+                                span {
+                                    padding: 12px 24px;
+                                    font-family: Gotham Pro;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    line-height: 16.24px;
+                                    color: #221F20;
+                                    background: #9FAFE4;
+                                    border-top-right-radius: 8px;
+                                    border-bottom-right-radius: 8px;
+                                    padding-left: 120px;
+                                    display: none;
+
+                                }
+                            }
+
+                        }
+
+
+                        .plan {
+                            h1 {
+                                font-family: Gotham Pro;
+                                font-weight: 400;
+                                font-size: 24px;
+                                line-height: 35.52px;
+                                color: #221F20;
+                            }
+                        }
+
+                        .retirement {
+                            display: flex;
+                            gap: 16px;
+
+                            .first {
+
+                                border: 1px solid #B3B0B1;
+                                background: #FFFFFF;
+                                border-radius: 8px;
+
+                                .heading3 {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    padding: 16px;
+                                    border-bottom: 1px solid #B3B0B1;
+
+                                    h1 {
+                                        font-family: Gotham Pro;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 16.24px;
+                                        color: #221F20;
+
+                                    }
+
+                                    button {
+                                        border: 1px solid #FFB952;
+                                        background: #FFF1DC;
+                                        padding: 8px 16px;
+                                        border-radius: 16px;
+                                        font-family: Gotham Pro;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        line-height: 13.92px;
+                                        color: #221F20;
+                                    }
+                                }
+
+                                .india {
+                                    padding: 16px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 16px;
+
+                                    h1 {
+                                        font-family: Gotham Pro;
+                                        font-weight: 400;
+                                        font-size: 20px;
+                                        line-height: 23.2px;
+                                        color: #1C2945;
+                                    }
+
+                                    .pra {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 8px;
+
+                                        p {
+                                            font-family: Gotham Pro;
+                                            font-weight: 400;
+                                            font-size: 10px;
+                                            line-height: 11.6px;
+                                            color: #221F20;
+
+                                        }
+                                    }
+                                }
+
+                                .apply {
+                                    border-top: 1px solid #DEDCDD;
+                                    padding: 16px;
+                                    text-align: center;
+
+                                    a {
+                                        font-family: Gotham Pro;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 16.24px;
+                                        color: #19417A;
+                                    }
+                                }
+                            }
+                        }
+
+                        .download {
+                            display: flex;
+                            justify-content: end;
+
+                            .end {
+                                display: flex;
+                                gap: 8px;
+
+                                h1 {
+                                    font-family: Gotham Pro;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 18.56px;
+                                    color: #19417A;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

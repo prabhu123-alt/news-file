@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="Annuity.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="Annuity">
+            <div class="heading">
+                <h1>Annuity Calculator</h1>
+            </div>
+            <div class="main">
+                <div class="left_side">
+                    <div class="topside">
+                        <div class="forms">
+                            <div class="lables">
+                                <label>Your Age</label>
+                            </div>
+                            <div class="inp">
+                                <div id="image-hide">
+                                    <input type="text" placeholder="Age" id="agevalue" maxlength="2">
+                                    <img id="imge-hides" class="image-hids"
+                                        src="../AnnuityCalculator/font&image/image/Right Icon Placeholder.png">
+                                </div>
+                                <p id="agepra"></p>
+                            </div>
+                        </div>
+
+                        <div class="forms">
+                            <div class="lables">
+                                <label>Starting Principal</label>
+                            </div>
+                            <div class="inp">
+                                <div id="image-hide2">
+                                    <input type="text" placeholder="Amount you wish to invest " id="AmountValue">
+                                    <img id="imge-hidess" class="image-hids"
+                                        src="../AnnuityCalculator/font&image/image/Right Icon Placeholder.png">
+                                </div>
+
+                                <p id="Amountpra"></p>
+
+                            </div>
+                        </div>
+                        <div class="ranges">
+                            <div class="return">
+                                <p>How much return do you expect on your savings?</p>
+                                <input type="text" value=" 1 %" id="ReturnValue">
+                            </div>
+                            <div class="range1">
+                                <input type="range" value="1" class="accent" id="ReturnRange" min="1" max="14">
+
+                            </div>
+                            <div class="pra">
+                                <p>1%</p>
+                                <p>14%</p>
+                            </div>
+                        </div>
+
+                        <div class="ranges">
+                            <div class="return">
+                                <p>Life Expectancy</p>
+                                <input type="text" value="70 years" id="YearValue">
+                            </div>
+                            <div class="range1">
+                                <input type="range" class="accent" id="YearRange" value="70" min="70" max="100">
+
+
+                            </div>
+                            <div class="pra">
+                                <p>70 years</p>
+                                <p>100 years</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <button id="btn">Calculate Now</button>
+                    </div>
+                </div>
+                <div class="hideimage">
+                    <img class="raju" src="./font&image/image/Frame 48098168.png" id="image">
+                    <div id="righttwo">
+                        <div class="right ">
+                            <div class="heading2">
+                                <h1>You will receive a yearly annuity of <span id="yearly"> 0 </span> for <span
+                                        id="yearsnumber"> 70 </span> years.</h1>
+                            </div>
+                            <div class="price">
+                                <div class="Yearly-without-return">
+                                    <p class="price1">Yearly Annuity without return of Purchase Price</p>
+                                    <span id="annuityfinal"></span>
+                                </div>
+                                <div class="Yearly-with-return">
+                                    <p class="price2">Yearly Annuity with return of Purchase Price</p>
+                                    <span id="yearlyAnnuity"></span>
+                                </div>
+
+
+                            </div>
+                            <div class="plan">
+                                <h1>Explore our Plans </h1>
+                            </div>
+                            <div class="retirement">
+                                <div class="first">
+                                    <div class="heading3">
+                                        <h1>5 Annuity Options</h1>
+                                        <button>Retirement</button>
+                                    </div>
+                                    <div class="india">
+                                        <div class="h1">
+                                            <h1>IndiaFirst Life Guaranteed Annuity Plan</h1>
+                                        </div>
+                                        <div class="pra">
+                                            <p>Lifetime income assurance</p>
+                                            <p>Joint life coverage option</p>
+                                            <p>Critical illness protection</p>
+                                        </div>
+                                    </div>
+                                    <div class="apply">
+                                        <a href="#">Apply Now</a>
+                                    </div>
+                                </div>
+                                <div class="first">
+                                    <div class="heading3">
+                                        <h1>12 Annuity Options</h1>
+                                        <button>Retirement</button>
+                                    </div>
+                                    <div class="india">
+                                        <div class="h1">
+                                            <h1>IndiaFirst Life Guaranteed Annuity Plan</h1>
+                                        </div>
+                                        <div class="pra">
+                                            <p>Receive income during retirement years.</p>
+                                            <p>Option to extend pension benefits to loved ones.</p>
+                                            <p>Return of purchase price</p>
+                                        </div>
+                                    </div>
+                                    <div class="apply">
+                                        <a href="#">Apply Now</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="download">
+                                <div class="end">
+                                    <h1>Download Report</h1>
+                                    <img src="font&image/image/Component 1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="Annuity.js"></script>
+</body>
+
+</html>
